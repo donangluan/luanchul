@@ -1,6 +1,6 @@
 package btvn.buoi6.bai1;
 
-public abstract class Animail {
+public abstract class Animal {
 
     protected String name;
     protected int age;
@@ -10,11 +10,13 @@ public abstract class Animail {
         this.age = age;
     }
 
-    // Phương thức trừu tượng action() sẽ được ghi đè trong các lớp con
+
+
+    // Phương thức trừu tượng để mô tả hành động đặc trưng của động vật
     public abstract void action();
 
-    // Phương thức showInfo() để hiện thị thông tin chi tiết
+    // Phương thức hiển thị thông tin chi tiết về động vật
     public void showInfo() {
-        System.out.println("Name: " + name + ", Age: " + age);
+        System.out.println("Tên: " + name + ", Tuổi: " + age);
     }
 }
